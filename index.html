@@ -4,11 +4,170 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site</title>
+  <title>Scoot</title>
   <link rel="stylesheet" href="css/normalize-mini.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <header class="site-header">
+
+    <div class="site-header__container container">
+      <nav class="site-header__nav">
+        <a href="index.html" class="site-header__logo"><img src="/img/icon/site-logo.svg" alt="site logo" class="site-header__logo-img"></a>
+        <ul class="site-header__list">
+          <li class="site-header__item"><a href="about.html" class="site-header__link">About</a></li>
+          <li class="site-header__item"><a href="location.html" class="site-header__link">Location</a></li>
+          <li class="site-header__item"><a href="careers,html" class="site-header__link">Careers</a></li>
+        </ul>
+      </nav>
+      <button class="button site-header__btn" type="button">Get scootin</button>
+    </div>
+    
+  </header>
+
+  <main class="site-main">
+
+    <section class="home-hero">
+      <div class="home-hero__container container">
+        <div class="home-hero__title">
+          <h1 class="home-hero__heading">Scooter sharing made simple</h1>
+        </div>
+
+        <div class="home-hero__content">
+          <p class="home-hero__desc">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+          <button class="button home-hero__btn">Get scootin</button>
+        </div>
+      </div>
+
+      <span class="home-hero__circle first-circle"></span>
+      <span class="home-hero__circle second-circle"></span>
+      <span class="home-hero__circle thrid-circle"></span>
+    </section>
+
+    <!-- HOME-FEATURES -->
+
+    <section class="home-features">
+
+      <hr class="home-features__hr">
+      <div class="home-features__container container">
+
+        <ul class="home-features__list">
+          <li class="home-features__item feature">
+            <h3 class="feature__heading">Locate with app</h3>
+            <p class="feature__text">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+          </li>
+          <li class="home-features__item feature">
+            <h3 class="feature__heading">Pick your scooter</h3>
+            <p class="feature__text">We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.</p>
+          </li>
+          <li class="home-features__item feature">
+            <h3 class="feature__heading">Enjoy the ride</h3>
+            <p class="feature__text">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="home-advantages">
+      <div class="home-advantages__container container">
+
+        <ol class="home-advantages__list">
+          <li class="home-advantages__item advantage advantage-ease">
+            <div class="advantage__inner advantage-ease__inner">
+              <h3 class="advantage__heading">Easy to use
+                riding telemetry</h3>
+                <p class="advantage__desc">The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
+                <button class="button advantage-btn">Learn more</button>
+            </div>
+          </li>
+          <li class="home-advantages__item advantage coming-to">
+            <div class="advantage__inner coming-to__inner">
+              <h3 class="advantage__heading">Coming to a city near you</h3>
+              <p class="advantage__desc">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
+              <button class="button advantage-btn">Learn more</button>
+            </div>
+          </li>
+          <li class="home-advantages__item advantage zero-hassle">
+            <div class="advantage__inner zero-hassle__inner">
+              <h3 class="advantage__heading">Zero hassle payments</h3>
+              <p class="advantage__desc">Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
+              <button class="button advantage-btn">Learn more</button>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="scoot-footer">
+    <div class="scoot-footer__top">
+      <div class="scoot-footer__container container">
+        <div class="scoot-footer__title">
+          <h2 class="scoot-footer__heading">Sign up and Scoot off today</h2>
+        </div>
+  
+        <div class="scoot-footer__links">
+          <a href="https://www.apple.com/ru/app-store/" class="scoot-footer__link scoot-footer--appstore">
+            <img src="/img/icon/appstore.svg" alt="appstore link">
+          </a>
+  
+          <a href="https://play.google.com/store" class="scoot-footer__link scoot-footer--play-market">
+            <img src="/img/icon/playmarket-img.svg" alt="play market link">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scoot-footer__bottom">
+      <div class="scoot-footer__container container">
+        <a href="index.html" class="scoot-footer__logo-link">
+          <img src="./img/icon/footer-logo.svg" alt="site logo">
+        </a>
+        <ul class="scoot-footer__list">
+          <li class="scoot-footer__item"><a href="about.html" class="scoot-footer__link">About</a></li>
+          <li class="scoot-footer__item"><a href="location.html" class="scoot-footer__link">Location</a></li>
+          <li class="scoot-footer__item"><a href="careers.html" class="scoot-footer__link">Careers</a></li>
+        </ul>
+
+        <ul class="scoot-footer__social-list">
+          <li class="scoot-footer__social-item">
+            <a target="blank" href="https://www.facebook.com/" class="scoot-footer__social">
+
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z" fill="#FCB72B"/>
+                </svg>
+                
+
+            </a>
+          </li>
+          <li class="scoot-footer__social-item">
+            <a target="blank" href="https://twitter.com/" class="scoot-footer__social">
+
+              <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 2.557C23.117 2.949 22.168 3.213 21.172 3.332C22.189 2.723 22.97 1.758 23.337 0.608001C22.386 1.172 21.332 1.582 20.21 1.803C19.313 0.846001 18.032 0.248001 16.616 0.248001C13.437 0.248001 11.101 3.214 11.819 6.293C7.728 6.088 4.1 4.128 1.671 1.149C0.381 3.362 1.002 6.257 3.194 7.723C2.388 7.697 1.628 7.476 0.965 7.107C0.911 9.388 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.106C22.505 4.411 23.34 3.544 24 2.557Z" fill="#FCB72B"/>
+                </svg>
+
+            </a>
+          </li>  
+
+          <li class="scoot-footer__social-item">
+            <a target="blank" href="https://www.instagram.com/" class="scoot-footer__social">
+
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM5.838 12C5.838 8.597 8.597 5.838 12 5.838C15.403 5.838 18.162 8.597 18.162 12C18.162 15.404 15.403 18.163 12 18.163C8.597 18.163 5.838 15.403 5.838 12ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM16.965 5.595C16.965 4.8 17.61 4.155 18.406 4.155C19.201 4.155 19.845 4.8 19.845 5.595C19.845 6.39 19.201 7.035 18.406 7.035C17.61 7.035 16.965 6.39 16.965 5.595Z" fill="#FCB72B"/>
+                </svg>
+                
+            </a>
+          </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+
+  </footer>
   
 </body>
 </html>
