@@ -861,3 +861,135 @@ path {
 .hiw__cards_active .card__heading::after {
   transform: rotate(180deg);
 }
+
+/* Careers */
+
+.careers-hero {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-image:url(../img/icon/about-hero-circlesvg.svg), url(../img/careers-hero.png);
+  background-repeat: no-repeat;
+  background-size: 234px, contain;
+  background-position: calc(50% + 600px) center, center center;
+}
+
+.careers-adv {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.careers-adv__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.careers-adv__item {
+  display: flex;
+  align-items: center;
+}
+
+.careers-adv__item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.careers-adv__item::before {
+  display: block;
+  flex-shrink: 0;
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.careers-adv__item:nth-child(1)::before {
+  background-image: url(../img/careers-care.png);
+  margin-left: 220px;
+}
+
+.about-advantage__wrapper {
+  width: 445px;
+}
+
+.care-to-join__inner {
+  position: relative;
+}
+
+.care-to-join__inner::before {
+  position: absolute;
+  content: "";
+  width: 1079px;
+  height: 445px;
+  background-image: url(../img/careers-care-bg.svg);
+  background-repeat: no-repeat;
+  top: -125px;
+  left: 530px;
+}
+
+.career-adv__heading {
+  margin: 0 0 24px;
+  font-family: 'Space mono';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: var(--headings-color);
+}
+
+.career-adv__desc {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+
+
+/* VALUES CAREERS */
+.values-careers {
+  padding-top: 60px;
+}
+
+
+
+/* WORKERS */
+.workers {
+  padding-bottom: 160px;
+}
+
+.workers__list {
+  margin: 0;
+  margin-bottom: -24px;
+  padding: 0;
+  list-style: none;
+}
+
+.workers__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 32px 64px 40px 35px;
+  width: 100%;
+  background-color: var(--faq-card-bg);
+}
+
+.worker__inner {
+  margin-right: auto;
+}
+
+.worker__heading {
+  margin: 0 0 8px;
+  font-family: Space Mono;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: var(--headings-color);
+}
+
+.worker__desc {
+  margin: 0;
+}
+
+.worker__btn {
+  padding: 13px 66px;
+}
