@@ -605,9 +605,9 @@ var simplemaps_worldmap_mapdata={
   },
   locations: {
     "0": {
+      lat: 45.71,
+      lng: -84.0059731,
       name: "New York",
-      lat: 40.71,
-      lng: -74.0059731,
       type: "image",
       image_url: "../img/new-york.svg",
       size: "50"
