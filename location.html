@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scoot</title>
-  <link rel="stylesheet" href="css/normalize-mini.css">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Locations</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
@@ -21,83 +20,43 @@
           <li class="site-header__item"><a href="careers.html" class="site-header__link">Careers</a></li>
         </ul>
       </nav>
-      <a href="#" class="button site-header__btn" target="_blank">Get scootin</a>
+      <a href="#" target="_blank" class="button site-header__btn" type="button">Get scootin</a>
     </div>
     
   </header>
 
-  <main class="site-main">
+  <main class="locations-main">
+    <section class="careers-hero">
+      <div class="about-hero__container container">
+        <h1 class="about-hero__heading">Locations</h1>
+      </div>
+    </section>
 
-    <section class="home-hero">
-      <div class="home-hero__container container">
-        <div class="home-hero__title">
-          <h1 class="home-hero__heading">Scooter sharing made simple</h1>
+    <section class="map">
+      
+        <div id="map"></div>
+      
+      </div>
+      
+    </section>
+
+    <!-- YOUR CITY -->
+    <section class="your-city">
+      <div class="your-city__container container">
+        <div class="your-city__title">
+          <div class="your-city__head">
+            <h3 class="your-city__heading">Your city not listed?</h3>
+          </div>
+          <div class="your-city__desc">
+            <p class="your-city__content">If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.</p>
+          </div>
         </div>
-
-        <div class="home-hero__content">
-          <p class="home-hero__desc">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
-          <a href="#" class="button home-hero__btn" target="_blank">Get scootin</a>
-        </div>
+        <a href="#" target="_blank" class="button your-city__btn">Message Us</a>
       </div>
     </section>
 
-    <!-- HOME-FEATURES -->
-
-    <section class="home-features">
-
-      <div class="home-features__container container">
-
-        <ul class="home-features__list">
-          <li class="home-features__item feature">
-            <h3 class="feature__heading">Locate with app</h3>
-            <p class="feature__text">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
-          </li>
-          <li class="home-features__item feature">
-            <h3 class="feature__heading">Pick your scooter</h3>
-            <p class="feature__text">We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.</p>
-          </li>
-          <li class="home-features__item feature">
-            <h3 class="feature__heading">Enjoy the ride</h3>
-            <p class="feature__text">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.</p>
-          </li>
-          
-          
-        </ul>
-
-      </div>
-    </section>
-
-    <section class="home-advantages">
-      <div class="home-advantages__container container">
-
-        <ol class="home-advantages__list">
-          <li class="home-advantages__item advantage advantage-ease">
-            <div class="advantage__inner advantage-ease__inner">
-              <h3 class="advantage__heading">Easy to use
-                riding telemetry</h3>
-                <p class="advantage__desc">The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
-                <a href="#" target="_blank" class="button advantage-btn">Learn more</a>
-            </div>
-          </li>
-          <li class="home-advantages__item advantage coming-to">
-            <div class="advantage__inner coming-to__inner">
-              <h3 class="advantage__heading">Coming to a city near you</h3>
-              <p class="advantage__desc">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
-              <a href="#" target="_blank" class="button advantage-btn">Learn more</a>
-            </div>
-          </li>
-          <li class="home-advantages__item advantage zero-hassle">
-            <div class="advantage__inner zero-hassle__inner">
-              <h3 class="advantage__heading">Zero hassle payments</h3>
-              <p class="advantage__desc">Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
-              <a href="#" target="_blank" class="button advantage-btn">Learn more</a>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
   </main>
-
+  
   <footer class="scoot-footer">
     <div class="scoot-footer__top">
       <div class="scoot-footer__container container">
@@ -106,11 +65,11 @@
         </div>
   
         <div class="scoot-footer__links">
-          <a href="https://www.apple.com/ru/app-store/" class="scoot-footer__link scoot-footer--appstore" target="_blank">
+          <a href="https://www.apple.com/ru/app-store/" class="scoot-footer__link scoot-footer--appstore">
             <img src="/img/icon/appstore.svg" alt="appstore link">
           </a>
   
-          <a href="https://play.google.com/store" class="scoot-footer__link scoot-footer--play-market" target="_blank">
+          <a href="https://play.google.com/store" class="scoot-footer__link scoot-footer--play-market">
             <img src="/img/icon/playmarket-img.svg" alt="play market link">
           </a>
         </div>
@@ -165,6 +124,8 @@
     </div>
 
   </footer>
-  <script src="/script/main.js"></script>
+
+    <script src="/script/mapdata.js"></script>
+    <script src="/script/worldmap.js"></script>
 </body>
 </html>

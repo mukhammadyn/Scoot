@@ -105,7 +105,6 @@ main {
 
 .site-header__logo {
   margin-right: 58px;
-  text-decoration: none;
 }
 
 .site-header__logo:hover {
@@ -129,7 +128,7 @@ main {
   list-style: none;
 }
 
-.site-header__item {
+.site-header__item:not(:last-child) {
   margin-right: 32px;
 }
 
@@ -158,6 +157,7 @@ main {
   cursor: pointer;
   text-transform: capitalize;
   font-family: 'Space Mono';
+  text-decoration: none;
 }
 
 .button:hover {
@@ -176,43 +176,20 @@ main {
   position: relative;
   padding-top: 153px;
   padding-bottom: 152px;
-  background-image: url(../img/icon/home-hero-bg-vector.svg), url(../img/home-hero-bg.png);
+  background: url(../img/icon/home-hero-bg-vector.svg), url(../img/home-hero-bg.png);
   background-repeat: no-repeat;
-  background-position: calc(50% + -174px) calc(50% + 99px), calc(50% - 35px) center;
+  background-position: calc(50% + -174px) calc(50% + 99px), calc(50% - 2px) center;
 }
 
-.first-circle {
+.home-hero::before {
   position: absolute;
-  width: 62px;
-  height: 62px;
-  right: calc(50% - 565px);;
-  bottom: calc(50% + -161px);
+  top: 423px;
+  left: calc(50% + 529px);
+  width: 235px;
+  height: 63px;
+  background-image: url(../img/icon/about-hero-circlesvg.svg);
+  background-repeat: no-repeat;
   content: "";
-  border-radius: 50%;
-  border: 3px solid #fff;
-}
-
-.second-circle {
-  position: absolute;
-  width: 62px;
-  height: 62px;
-  right: calc(50% - 649px);;
-  bottom: calc(50% + -161px);
-  content: "";
-  border-radius: 50%;
-  border: 3px solid #fff;
-}
-
-.thrid-circle {
-  position: absolute;
-  width: 62px;
-  height: 62px;
-  right: calc(50% - 732px);;
-  bottom: calc(50% + -161px);
-  content: "";
-  border-radius: 50%;
-  background-color: #fff;
-  border: 3px solid #fff;
 }
 
 .home-hero__title {
@@ -251,7 +228,7 @@ main {
   padding-bottom: 100px;
 }
 
-.home-features__hr {
+/* .home-features__hr {
   position: absolute;
   z-index: -1;
   top: 197px;
@@ -260,19 +237,35 @@ main {
   height: 10px;
   border: 1px solid transparent;
   background-color: #E5ECF4;
-}
+} */
 
 .home-features__list {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   margin-left: -30px;
+  margin-bottom: -30px;
   padding: 0;
   list-style: none;
 }
 
+.home-features__list::before {
+  position: absolute;
+  z-index: -1;
+  top: 45px;
+  left: calc(50% - 750px);
+  width: 994px;
+  height: 14px;
+  border: 1px solid transparent;
+  background-color: #E5ECF4;
+  content: "";
+}
+
 .home-features__item {
   margin-left: 30px;
+  margin-bottom: 30px;
   width: 350px;
 }
 
@@ -463,6 +456,10 @@ main {
   opacity: 0.6;
 }
 
+.scoot-footer__logo-link img {
+  display: block;
+}
+
 .scoot-footer__list {
   display: flex;
   align-items: center;
@@ -472,7 +469,7 @@ main {
   list-style: none;
 }
 
-.scoot-footer__item {
+.scoot-footer__item:not(:last-child) {
   margin-right: 32px;
 }
 
@@ -660,14 +657,17 @@ path {
 .values__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   margin-left: -30px;
+  margin-bottom: -30px;
   padding: 0;
   list-style: none;
 }
 
 .values__item {
   margin-left: 30px;
+  margin-bottom: 30px;
   width: 350px;
   text-align: center;
 }
@@ -807,12 +807,17 @@ path {
   background-color: var(--faq-card-hover);
 }
 
+.hiw__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .card_last {
   margin-bottom: 64px;
 }
 
 .card__heading {
-  position: relative;
   margin: 0;
   margin-bottom: 24px;
   font-family: 'Space Mono';
@@ -823,29 +828,27 @@ path {
   color: var(--headings-color);
 }
 
-.card__heading::after {
-  position: absolute;
-  top: 8px;
-  right: 0;
-  content: "";
-  z-index: 1;
-  width: 22px;
-  height: 15px;
+.card__button {
+  width: 20px;
+  height: 14px;
+  border: 1px solid transparent;
   background-image: url(../img/icon/button-faq.svg);
+  background-color: transparent;
   background-repeat: no-repeat;
-  transition: transform 0.8s ease;
+  background-size: contain;
+  background-position: center center;
+  transition: transform 0.9s ease;
+  cursor: pointer;
 }
 
-.card__button {
+.card__button::before {
   position: absolute;
-  z-index: 1;
+  left: 0;
   top: 0;
-  right: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid transparent;
   background-color: transparent;
-  cursor: pointer;
+  content: "";
 }
 
 .card__text {
@@ -858,7 +861,7 @@ path {
   display: block;
 }
 
-.hiw__cards_active .card__heading::after {
+.hiw__cards_active .card__button {
   transform: rotate(180deg);
 }
 
@@ -992,4 +995,107 @@ path {
 
 .worker__btn {
   padding: 13px 66px;
+}
+
+
+
+/* MAP */
+.map {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.map__location {
+  position: absolute;
+  margin: 0;
+  padding: 23px 46px;
+  width: 201px;
+  background-color: var(--buttons-hover-color);
+  text-transform: capitalize;
+  font-family: 'Space Mono';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: var(--headings-color);
+}
+
+.map__location::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid var(--buttons-hover-color);
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  content: "";
+  top: 71px;
+  left: 78px;
+}
+
+.new-york {
+  top: 185px;
+  left: calc(50% - 410px);
+}
+
+.london {
+  top: 132px;
+  left: calc(50% - 165px);
+}
+
+.yokohama {
+  right: calc(50% - 497px);
+  top: 195px;
+}
+
+.jakarta{
+  top: 364px;
+  left: calc(50% + 217px);
+}
+
+
+
+/* YOUR CITY */
+.your-city {
+  padding-top: 60px;
+  padding-bottom: 122px;
+}
+
+.your-city__container {
+  display: flex;
+  align-items: center;
+}
+
+.your-city__title {
+  display: flex;
+  align-items: center;
+}
+
+.your-city__head {
+  margin-right: 30px;
+  width: 351px;
+}
+
+.your-city__heading {
+  margin: 0;
+  font-family: 'Space Mono';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: var(--headings-color);
+}
+
+.your-city__desc {
+  width: 445px;
+}
+
+.your-city__content {
+  margin: 0;
+}
+
+.your-city__btn {
+  margin-left: auto;
 }
